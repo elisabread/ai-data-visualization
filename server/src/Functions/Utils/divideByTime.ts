@@ -12,8 +12,6 @@ export function divideByTime(
 		return { label: label, data: [] };
 	});
 
-	console.log(dividedData);
-
 	time_labels.forEach((time, i) => {
 		const timeTo = Math.floor(new Date(time.time_to).getTime() / 1000);
 		const timeFrom = Math.floor(new Date(time.time_from).getTime() / 1000);
@@ -27,8 +25,6 @@ export function divideByTime(
 			}
 		});
 	});
-
-	console.log("Objs divided into different months: ", dividedData);
 
 	return dividedData;
 }

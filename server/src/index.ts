@@ -21,9 +21,7 @@ app.get("/", (req: any, res: any) => {
 });
 
 app.post("/chart-magic", async (req: any, res: any) => {
-	console.log("Messages form client: ", req.body.messages);
 	const data = await callOpenAI(req.body.messages);
-	console.log("Final data to be sent to client: ", data);
 	res.send(data);
 });
 

@@ -3,14 +3,19 @@ import * as dotenv from "dotenv";
 import getDataOneDim from "./getDataOneDim";
 import getDataTwoDim from "./getDataTwoDim";
 import { ChatCompletionMessageParam } from "openai/resources/chat/completions";
-const papiClient = require("@etl/papi-client");
 
+////////////////////////////////////////////////////////////////////////////////
+// CONSTANTS
+////////////////////////////////////////////////////////////////////////////////
 dotenv.config();
 
 const openai = new OpenAI({
 	apiKey: process.env.OPENAI_API_KEY,
 });
 
+/**
+ * Description of functions available.
+ */
 const functions = [
 	{
 		name: "getDataOneDim",
@@ -149,6 +154,9 @@ const functions = [
 	},
 ];
 
+////////////////////////////////////////////////////////////////////////////////
+// FUNCTIONS
+////////////////////////////////////////////////////////////////////////////////
 async function callOpenAI(messages: ChatCompletionMessageParam[]) {
 	//OpenAI determines what chart we want to render & what data is needed to do so
 	const res = await openai.chat.completions.create({
@@ -158,25 +166,18 @@ async function callOpenAI(messages: ChatCompletionMessageParam[]) {
 		function_call: "auto",
 	});
 
-	console.log(res);
-
-	const openAiRes = res.choices[0].message;
-	console.log("OpenAI response: ", openAiRes);
-
 	//Save the function call response
+	const openAiRes = res.choices[0].message;
 	const chartArgs = res.choices[0].message.function_call;
-	console.log("OpenAI chart args: ", chartArgs);
 
 	//Call suggested function based on the reccomended chart args determined by OpenAI
 	switch (chartArgs?.name) {
 		case "getDataOneDim": {
 			const res = await getDataOneDim(JSON.parse(chartArgs.arguments));
-			console.log("One dim data: ", res);
 			return { resType: "chart", res: res };
 		}
 		case "getDataTwoDim": {
 			const res = await getDataTwoDim(JSON.parse(chartArgs.arguments));
-			console.log("Two dim data: ", res);
 			return { resType: "chart", res: res };
 		}
 		default:

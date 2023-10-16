@@ -14,10 +14,6 @@ type BarChart = {
 	data: ChartData<"bar", number[], string>;
 };
 
-/* function isBarChart(x: Chart): x is BarChart {
-	return x.kind === "bar";
-} */
-
 type DoughnutChart = {
 	kind: "doughnut";
 	data: ChartData<"doughnut", number[], string>;
@@ -53,7 +49,6 @@ const YourGraph = () => {
 		})
 			.then((response) => response.json())
 			.then((response) => {
-				console.log(response);
 				if (response.resType === "message") {
 					setMessages([
 						...messages,
