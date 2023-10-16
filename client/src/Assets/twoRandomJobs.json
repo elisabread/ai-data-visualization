@@ -1,0 +1,153 @@
+[
+	{
+		"id": "28004702",
+		"external_id": "46-556987-8399-00000053091E06BE30",
+		"application_deadline": "2023-10-04T23:59:59",
+		"number_of_vacancies": "1",
+		"employment_type": {
+			"concept_id": "PFZr_Syz_cUq",
+			"label": "Vanlig anställning",
+			"legacy_ams_taxonomy_id": "1"
+		},
+		"salary_type": {
+			"concept_id": "oG8G_9cW_nRf",
+			"label": "Fast månads- vecko- eller timlön",
+			"legacy_ams_taxonomy_id": "1"
+		},
+		"duration": {
+			"concept_id": "qQUd_4qe_NDT",
+			"label": "6 månader eller längre",
+			"legacy_ams_taxonomy_id": "2"
+		},
+		"working_hours_type": {
+			"concept_id": "6YE1_gAC_R2G",
+			"label": "Heltid",
+			"legacy_ams_taxonomy_id": "1"
+		},
+		"scope_of_work": { "min": "100", "max": "100" },
+		"experience_required": false,
+		"access_to_own_car": false,
+		"driving_license_required": false,
+		"occupation": {
+			"concept_id": "KQty_E1u_cia",
+			"label": "Helpdesktekniker/Supporttekniker",
+			"legacy_ams_taxonomy_id": "7020"
+		},
+		"occupation_group": {
+			"concept_id": "hmaC_cfi_UKg",
+			"label": "Supporttekniker, IT",
+			"legacy_ams_taxonomy_id": "3512"
+		},
+		"occupation_field": {
+			"concept_id": "apaJ_2ja_LuF",
+			"label": "Data/IT",
+			"legacy_ams_taxonomy_id": "3"
+		},
+		"workplace_address": {
+			"municipality": "Linköping",
+			"municipality_code": "0580",
+			"municipality_concept_id": "bm2x_1mr_Qhx",
+			"region": "Östergötlands län",
+			"region_code": "05",
+			"region_concept_id": "oLT3_Q9p_3nn",
+			"country": "Sverige",
+			"country_code": "199",
+			"country_concept_id": "i46j_HmG_v64"
+		},
+		"publication_date": "2023-09-04 13:45:32 UTC",
+		"last_publication_date": "2023-10-04 23:59:59 UTC",
+		"must_have": {
+			"skills": [],
+			"languages": [],
+			"work_experiences": [],
+			"education": [],
+			"education_level": []
+		},
+		"nice_to_have": {
+			"skills": [],
+			"languages": [],
+			"work_experiences": [],
+			"education": [],
+			"education_level": []
+		}
+	},
+	{
+		"id": "28004683",
+		"external_id": "46-556077-8465-550",
+		"application_deadline": "2023-10-22T23:59:59",
+		"number_of_vacancies": "1",
+		"employment_type": {
+			"concept_id": "PFZr_Syz_cUq",
+			"label": "Vanlig anställning",
+			"legacy_ams_taxonomy_id": "1"
+		},
+		"salary_type": {
+			"concept_id": "oG8G_9cW_nRf",
+			"label": "Fast månads- vecko- eller timlön",
+			"legacy_ams_taxonomy_id": "1"
+		},
+		"duration": {
+			"concept_id": "a7uU_j21_mkL",
+			"label": "Tills vidare",
+			"legacy_ams_taxonomy_id": "1"
+		},
+		"working_hours_type": {
+			"concept_id": "6YE1_gAC_R2G",
+			"label": "Heltid",
+			"legacy_ams_taxonomy_id": "1"
+		},
+		"scope_of_work": { "min": "100", "max": "100" },
+		"experience_required": true,
+		"access_to_own_car": false,
+		"driving_license_required": true,
+		"occupation": {
+			"concept_id": "Euqs_sFt_uAP",
+			"label": "Ventilationstekniker",
+			"legacy_ams_taxonomy_id": "7253"
+		},
+		"occupation_group": {
+			"concept_id": "fLKb_bJ3_69p",
+			"label": "VVS-montörer m.fl.",
+			"legacy_ams_taxonomy_id": "7125"
+		},
+		"occupation_field": {
+			"concept_id": "j7Cq_ZJe_GkT",
+			"label": "Bygg och anläggning",
+			"legacy_ams_taxonomy_id": "2"
+		},
+		"workplace_address": {
+			"municipality": "Stockholm",
+			"municipality_code": "0180",
+			"municipality_concept_id": "AvNB_uwa_6n6",
+			"region": "Stockholms län",
+			"region_code": "01",
+			"region_concept_id": "CifL_Rzy_Mku",
+			"country": "Sverige",
+			"country_code": "199",
+			"country_concept_id": "i46j_HmG_v64"
+		},
+		"publication_date": "2023-09-04 13:42:41 UTC",
+		"last_publication_date": "2023-10-22 23:59:59 UTC",
+		"must_have": {
+			"skills": [],
+			"languages": [],
+			"work_experiences": [
+				{
+					"weight": "10",
+					"concept_id": "Euqs_sFt_uAP",
+					"label": "Ventilationstekniker",
+					"legacy_ams_taxonomy_id": "7253"
+				}
+			],
+			"education": [],
+			"education_level": []
+		},
+		"nice_to_have": {
+			"skills": [],
+			"languages": [],
+			"work_experiences": [],
+			"education": [],
+			"education_level": []
+		}
+	}
+]

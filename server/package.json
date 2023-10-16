@@ -1,0 +1,21 @@
+{
+	"name": "visualislaytion-server",
+	"version": "1.0.0",
+	"description": "A server to host a local API for the Visualislaytion client.",
+	"main": "index.js",
+	"scripts": {
+		"test": "echo \"Error: no test specified\" && exit 1",
+		"server": "tsc && node ./dist/index.js"
+	},
+	"author": "Elisabeth Nyström",
+	"license": "ISC",
+	"dependencies": {
+		"@etl/papi-client": "^2.1.6",
+		"cors": "^2.8.5",
+		"express": "^4.18.2"
+	},
+	"devDependencies": {
+		"@types/cors": "^2.8.14",
+		"typescript": "^5.2.2"
+	}
+}
